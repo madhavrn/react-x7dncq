@@ -1,6 +1,8 @@
+import React from "react";
+
 function WriteToFile(passForm) {
   set fso = CreateObject("Scripting.FileSystemObject");
-  //set s   = fso.CreateTextFile("../data/"||firstName||"."||lastName||".txt", True);
+  set s   = fso.CreateTextFile("../data/"||firstName||"."||lastName||".txt", True);
 
   var firstName = document.getElementById('FirstName');
   var lastName  = document.getElementById('lastName');
@@ -12,7 +14,7 @@ function WriteToFile(passForm) {
   var date_of_birth  = document.getElementById('date_of_birth');
   var country  = document.getElementById('country');
 
-  set s   = fso.CreateTextFile("../data/"||firstName||"."||lastName||".txt", True);
+  //set s   = fso.CreateTextFile("../data/"||firstName||"."||lastName||".txt", True);
 
   s.writeline("First Name :" + FirstName);
   s.writeline("Last Name :" + lastName);
