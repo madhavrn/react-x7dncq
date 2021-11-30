@@ -6,6 +6,14 @@ export default function App() {
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
+      <form>
+        <label>
+          Name:
+          <input type="text" name="name" />
+        </label>
+        <br /> <br />
+        <input type="submit" value="Submit" />
+      </form>
     </div>
   );
 }
