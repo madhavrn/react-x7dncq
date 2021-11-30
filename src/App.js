@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import './WriteFile.js';
 
 export default function App() {
   return (

@@ -26,8 +26,6 @@ function WriteToFile(passForm) {
   s.writeline("DOB :" + date_of_birth);
   s.writeline("Country_of_interest :" + country);
 
-
-
   s.writeline("-----------------------------");
   s.Close();
 }
